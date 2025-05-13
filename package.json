@@ -1,0 +1,21 @@
+{
+  "name": "code-chatbot",
+  "version": "1.0.0",
+  "description": "Ein Chatbot, der OpenAI's API nutzt, um Fragen zu beantworten",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chatbot",
+    "openai",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^4.0.0"
+  }
+} 

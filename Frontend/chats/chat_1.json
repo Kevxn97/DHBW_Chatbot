@@ -1,0 +1,14 @@
+{
+  "chat_name": "Chat 1",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hey, wie viel ECTS punkte hat das Integrationsseminar ?"
+    },
+    {
+      "role": "assistant",
+      "content": "Das Integrationsseminar im Studiengang Digital Business Management hat 5 ECTS-Punkte. \n\nBei weiteren Fragen wenden Sie sich bitte an das Sekretariat.\n\n---\n\nSekretariat BWL – Digital Business Management  \nHannah Malzahn  \nE-Mail: hannah.malzahn@dhbw-heidenheim.de  \nTelefon: +49 7321 2722-242  \nBürozeiten: bitte anfragen ,  "
+    }
+  ],
+  "timestamp": 1747136836.453311
+}
