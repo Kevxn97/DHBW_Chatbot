@@ -2,6 +2,7 @@ const { OpenAI } = require("openai");
 // const readline = require("readline");
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 const port = 3001;
@@ -11,7 +12,7 @@ app.use(express.json());
 
 // Initialisiere den OpenAI-Client
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || "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",
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 // Funktion zum Warten auf den Abschluss des Runs
