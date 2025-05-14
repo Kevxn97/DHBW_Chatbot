@@ -2,7 +2,7 @@
 setlocal EnableDelayedExpansion
 
 rem Definiere den Pfad zum Backend-Skript
-set BACKEND_SCRIPT=index.js
+set BACKEND_SCRIPT=index copy.js
 rem Definiere das Verzeichnis für das Frontend
 set FRONTEND_DIR=Frontend
 rem Standard-URL für Streamlit
@@ -46,10 +46,14 @@ rem --- Warte kurz und zeige Link ---
 echo Warte kurz, bis die Server bereit sind...
 timeout /t 5 /nobreak >nul
 
+rem Öffne den Browser automatisch
+start "" "!FRONTEND_URL!"
+
 echo.
 echo ----------------------------------------
 echo Server sollten jetzt laufen.
-echo Hier zum Chatbot: !FRONTEND_URL!
+echo Frontend wurde automatisch im Browser geöffnet.
+echo Falls nicht, gehe zu: !FRONTEND_URL!
 echo ----------------------------------------
 echo.
 echo Hinweis: Beide Server laufen in minimierten Fenstern.
