@@ -17,7 +17,7 @@ rem --- Backend starten ---
 echo [1/2] Starte Backend-Server (Node)...
 
 rem Starten des Node.js-Backends im Hintergrund mit eigenem Fenster
-start "Node.js Backend" /min cmd /c "node "!BACKEND_SCRIPT!" & pause"
+start "Node.js Backend" cmd /c "node "!BACKEND_SCRIPT!" & pause"
 rem Wir verwenden den Fenstertitel, um den Prozess später zu identifizieren
 set "BACKEND_TITLE=Node.js Backend"
 echo     Backend gestartet
@@ -33,7 +33,7 @@ if not exist "!FRONTEND_DIR!" (
 cd "!FRONTEND_DIR!"
 
 rem Starte Streamlit im Hintergrund
-start "Streamlit Frontend" /min cmd /c "streamlit run app.py & pause"
+start "Streamlit Frontend" cmd /c "streamlit run app.py & pause"
 rem Wir verwenden den Fenstertitel, um den Prozess später zu identifizieren
 set "FRONTEND_TITLE=Streamlit Frontend"
 echo     Frontend gestartet
