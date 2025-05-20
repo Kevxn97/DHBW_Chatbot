@@ -35,19 +35,24 @@ st.markdown("""
 <style>
 /* Page background */
 .stApp {
-    background-color: #f5f5f7;
+    background-color: #f8f9fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* Button styling */
 .stButton>button {
-    background-color: #E30613;
+    background-color: #007bff;
     color: white;
-    border-radius: 5px;
+    border-radius: 8px;
+}
+
+.stButton>button:hover {
+    background-color: #0056b3; /* Darker shade of the primary button color #007bff */
 }
 
 /* Text-input frame */
 .stTextInput>div>div>input {
-    border: 2px solid #E30613;
+    border: 2px solid #007bff;
     border-radius: 5px;
 }
 
@@ -59,12 +64,33 @@ st.markdown("""
     border-radius: 5px;
 }
 
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    font-family: inherit; /* Inherit font from .stApp */
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] h4,
+[data-testid="stSidebar"] h5,
+[data-testid="stSidebar"] h6 {
+    color: #007bff; /* Primary accent color */
+}
+
 /* Small example question buttons */
 .small-btn {
     font-size: 0.8em !important;
     padding: 0.2rem 0.5rem !important;
     height: auto !important;
     margin: 0.2rem !important;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+}
+
+.small-btn:hover {
+    background-color: #0056b3; /* Darker shade */
 }
 
 /* Message bubbles styling */
@@ -85,7 +111,7 @@ st.markdown("""
 .message-bubble {
     max-width: 70%;
     padding: 10px 15px;
-    border-radius: 18px;
+    border-radius: 20px;
     position: relative;
     font-size: 16px;
     line-height: 1.4;
@@ -93,16 +119,14 @@ st.markdown("""
 }
 
 .user-bubble {
-    background-color: #DCF8C6;
+    background-color: #e9ecef;
     color: #000;
-    border-top-right-radius: 4px;
     margin-left: auto;
 }
 
 .bot-bubble {
-    background-color: #E30613;
+    background-color: #007bff;
     color: white;
-    border-top-left-radius: 4px;
     margin-right: auto;
 }
 
@@ -131,7 +155,7 @@ st.markdown("""
     right: 10px;
     bottom: 10px;
     font-size: 24px;
-    color: #E30613;
+    color: #007bff;
     animation: loading-spin 1s linear infinite;
     z-index: 1000;
     pointer-events: none;
